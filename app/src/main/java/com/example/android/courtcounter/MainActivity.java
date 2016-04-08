@@ -48,7 +48,13 @@ public class MainActivity extends AppCompatActivity {
     public void addOneForTeamB(View v){
         scoreTeamB++;
         displayForTeamB(scoreTeamB);
+    }
 
+    public void resetScores(View v){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 
     /**
